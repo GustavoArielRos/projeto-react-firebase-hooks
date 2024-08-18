@@ -1,0 +1,34 @@
+.navbar {
+    display: flex; /* Usa o Flexbox para o layout da navbar */
+    box-shadow: rgba(0,0,0, .15) 0px -2px 10px 0px; /* Adiciona uma sombra sutil abaixo da navbar */
+    justify-content: space-between; /* Espaça os itens de forma que fiquem nas extremidades opostas */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    padding: .5em 2em; /* Adiciona um espaçamento interno de 0.5em em cima e embaixo, e 2em nas laterais */
+}
+
+.brand {
+    font-size: 1.2em; /* Define o tamanho da fonte da marca como 1.2 vezes o tamanho da fonte padrão */
+}
+
+.brand span {
+    font-weight: 900; /* Define o peso da fonte como muito grosso (negrito) */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+}
+
+.links_list {
+    display: flex; /* Usa o Flexbox para o layout da lista de links */
+    list-style: none; /* Remove os marcadores da lista */
+}
+
+.links_list {
+    margin-right: 1em; /* Adiciona um espaçamento à direita da lista de links */
+}
+
+.links_list li a {
+    padding: .4em .6em; /* Adiciona um espaçamento interno de 0.4em em cima e embaixo, e 0.6em nas laterais para os links */
+}
+
+.active {
+    background-color: #000; /* Define a cor de fundo como preta */
+    color: #FFF; /* Define a cor do texto como branca */
+}

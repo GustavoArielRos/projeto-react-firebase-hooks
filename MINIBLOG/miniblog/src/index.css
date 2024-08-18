@@ -1,0 +1,154 @@
+
+body {
+  background-color: #f6fcff; /* Define a cor de fundo da página como um tom muito claro de azul */
+  padding: 0; /* Remove qualquer espaçamento interno ao redor da página */
+  margin: 0; /* Remove qualquer margem externa ao redor da página */
+  font-family: "Montserrat", sans-serif; /* Define a fonte padrão da página como "Montserrat" ou, se não disponível, uma fonte sem serifa padrão */
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "Montserrat", sans-serif; /* Define a fonte dos textos de placeholder em inputs e textareas como "Montserrat" */
+  color: #AAA;
+}
+
+input:focus,
+textarea:focus {
+  outline: none; /* Remove a borda de foco padrão quando um input ou textarea é selecionado */
+}
+
+a,
+nav button {
+  text-decoration: none; /* Remove o sublinhado padrão dos links */
+  background-color: transparent; /* Define a cor de fundo como transparente */
+  border: none; /* Remove a borda dos botões */
+  color: #000; /* Define a cor do texto como preta */
+  transition: .4s; /* Define uma transição suave de 0.4 segundos para mudanças de estilo */
+  font-size: 1em; /* Define o tamanho da fonte como igual ao tamanho padrão */
+  cursor: pointer; /* Muda o cursor para uma mãozinha ao passar sobre links e botões */
+  font-family: "Montserrat", sans-serif; /* Define a fonte como "Montserrat" */
+}
+
+a:hover,
+nav button:hover {
+  color: #bbb; /* Altera a cor do texto para um cinza claro quando o mouse passa sobre links e botões */
+}
+
+/* FORM STYLES */
+
+form {
+  /* Define que o formulário terá uma largura máxima de 40% da tela */
+  max-width: 40%;
+  /* Centraliza o formulário horizontalmente na tela */
+  margin: 0 auto;
+}
+
+label {
+  /* Faz com que o label (etiqueta) e seus filhos ocupem toda a largura disponível */
+  display: flex;
+  /* Define que os filhos do label serão dispostos em coluna */
+  flex-direction: column;
+  /* Adiciona um espaço embaixo do label */
+  margin-bottom: 1em;
+}
+
+label span {
+  /* Adiciona um espaço embaixo do texto dentro do label */
+  margin-bottom: .3em;
+  /* Torna o texto em negrito */
+  font-weight: bold;
+  /* Alinha o texto à esquerda */
+  text-align: left;
+}
+
+input,
+textarea {
+  /* Inclui as bordas no tamanho total do elemento */
+  box-sizing: border-box;
+  /* Remove as bordas existentes */
+  border: none;
+  /* Adiciona uma borda apenas na parte inferior */
+  border-bottom: 1px solid #CCC;
+  /* Adiciona um espaço interno (padding) ao redor do texto */
+  padding: .8em 0;
+  /* Define o fundo como transparente */
+  background-color: transparent;
+}
+
+.btn {
+  /* Define a cor de fundo do botão */
+  background-color: #1a8918;
+  /* Define a cor do texto do botão */
+  color: #FFF;
+  /* Centraliza o texto dentro do botão */
+  text-align: center;
+  /* Muda o cursor para uma mãozinha ao passar sobre o botão */
+  cursor: pointer;
+  /* Arredonda os cantos do botão */
+  border-radius: 10px;
+  /* Define a largura do botão */
+  width: 120px;
+  /* Torna o texto em negrito */
+  font-weight: bold;
+  /* Remove a borda do botão */
+  border: none;
+  /* Adiciona um espaço interno ao redor do texto */
+  padding: 10px 15px;
+  /* Define o tamanho da fonte */
+  font-size: 1em;
+}
+
+.btn.btn-dark {
+  /* Muda a cor de fundo do botão para preto */
+  background-color: #000;
+  /* Remove o arredondamento dos cantos do botão */
+  border-radius: 0; 
+}
+
+.btn.btn-outline {
+  /* Define o fundo do botão como transparente */
+  background-color: transparent;
+  /* Remove o arredondamento dos cantos do botão */
+  border-radius: 0;
+  /* Define a cor do texto do botão */
+  color: #000;
+  /* Adiciona uma borda preta ao redor do botão */
+  border: 1px solid #000;
+  /* Adiciona um espaço interno ao redor do texto */
+  padding: 7px 30px;
+}
+
+.btn:hover {
+  /* Muda a cor de fundo do botão ao passar o mouse sobre ele */
+  background-color: #0f730c;
+  /* Mantém a cor do texto como branco */
+  color: #FFF;
+}
+
+.btn.btn-outline:hover {
+  /* Muda a cor de fundo do botão para preto ao passar o mouse sobre ele */
+  background-color: #000;
+}
+
+.btn.btn-danger:hover {
+  /* Muda a cor de fundo do botão para vermelho ao passar o mouse sobre ele */
+  background-color: #DC3545;
+}
+
+button[disabled] {
+  /* Define a cor de fundo do botão desativado */
+  background-color: #AAA;
+}
+
+.container .error {
+  /* Define a cor do texto da mensagem de erro */
+  color: #721c24;
+  /* Define a cor de fundo da mensagem de erro */
+  background-color: #f8d7da;
+  /* Adiciona uma borda ao redor da mensagem de erro */
+  border: 1px solid #f5c6cb;
+  /* Adiciona um espaço interno ao redor do texto */
+  padding: 5px;
+  /* Arredonda os cantos da mensagem de erro */
+  border-radius: 5px;
+}

@@ -1,0 +1,10 @@
+.footer {
+    height: 250px; /* Define a altura do rodapé como 250 pixels */
+    display: flex; /* Define o display como flex, ativando o Flexbox para o layout do rodapé */
+    flex-direction: column; /* Define a direção dos itens flexíveis como coluna, ou seja, os itens serão empilhados verticalmente */
+    align-items: center; /* Alinha os itens flexíveis ao centro no eixo transversal (horizontal) */
+    justify-content: center; /* Centraliza os itens flexíveis no eixo principal (vertical) */
+    background-color: #edf3f6; /* Define a cor de fundo do rodapé como um tom de azul claro */
+}
+
+
